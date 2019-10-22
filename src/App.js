@@ -1,14 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const addItem = (param) => {
+    console.log(param)
+  }
+
+  
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Josh's Wish List "project"
         </p>
         <a
           className="App-link"
@@ -19,8 +22,12 @@ function App() {
           Learn React
         </a>
       </header>
+      <button onClick={() => addItem("Thing I want")}>
+        Button that will add another wishlist item
+      </button>
     </div>
   );
 }
+
 
 export default App;
